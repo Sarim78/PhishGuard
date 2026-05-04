@@ -147,19 +147,9 @@ pip install -r requirements.txt
 
 ---
 
-## 🗺 Roadmap
-
-- [ ] Add Naive Bayes model for comparison
-- [ ] Build a Flask API to expose predictions via endpoint
-- [ ] Add a simple web UI for pasting and scanning emails
-- [ ] Integrate AbuseIPDB for IP reputation enrichment
-- [ ] Add MITRE ATT&CK technique tagging to detections
-
----
-
 ## 📄 License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License.
 
 ---
 

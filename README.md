@@ -40,7 +40,7 @@ Built as a cybersecurity portfolio project simulating a real SOC (Security Opera
 | Recall    | ~95%  |
 | F1 Score  | ~96%  |
 
-> Evaluated on a 20% holdout split from the Kaggle Phishing Email Detection dataset.
+> Evaluated on a 20% holdout split from the Phishing Email Detection dataset by subhajournal (Kaggle).
 
 ---
 
@@ -49,7 +49,7 @@ Built as a cybersecurity portfolio project simulating a real SOC (Security Opera
 ```
 phishguard/
 ├── data/
-│   └── emails.csv
+│   └── Phishing_Email.csv
 ├── src/
 │   ├── preprocess.py       # Text cleaning and normalization
 │   ├── features.py         # Hand-crafted security feature extraction
@@ -81,9 +81,9 @@ pip install -r requirements.txt
 ### 3. Add the dataset
 
 Download the dataset from Kaggle:
-[Phishing Email Detection by Shubham Jain](https://www.kaggle.com/datasets/shubhamjain27/phishing-emails)
+[Phishing Email Detection by subhajournal](https://www.kaggle.com/datasets/subhajournal/phishingemails)
 
-Place `emails.csv` inside the `data/` folder.
+Place `Phishing_Email.csv` inside the `data/` folder.
 
 ### 4. Train the model
 
@@ -149,7 +149,7 @@ pip install -r requirements.txt
 
 ## 📄 License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License.
 
 ---
 

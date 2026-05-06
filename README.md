@@ -7,7 +7,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square)
 ![scikit-learn](https://img.shields.io/badge/scikitlearn-1.3+-orange?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square)
 
 </div>
 
@@ -35,10 +35,10 @@ Built as a cybersecurity portfolio project simulating a real SOC (Security Opera
 
 | Metric    | Score |
 |-----------|-------|
-| Accuracy  | ~97%  |
-| Precision | ~96%  |
-| Recall    | ~95%  |
-| F1 Score  | ~96%  |
+| Accuracy  | 96.65%  |
+| Precision | 94% phishing / 99% safe |
+| Recall    | 98% phishing caught |
+| F1 Score  | 96%  |
 
 > Evaluated on a 20% holdout split from the Phishing Email Detection dataset by subhajournal (Kaggle).
 
@@ -57,6 +57,8 @@ phishguard/
 │   └── predict.py          # Run predictions on new emails
 ├── models/
 │   └── classifier.pkl      # Saved trained model
+├── tests/
+│   └── test_predict.py     # Unit tests for prediction module
 ├── requirements.txt
 └── README.md
 ```
@@ -98,6 +100,19 @@ python train.py
 python predict.py
 ```
 
+Or pass your own email directly:
+
+```bash
+python predict.py "Your account has been suspended click here now"
+```
+
+### 6. Run tests
+
+```bash
+cd tests
+python -m pytest test_predict.py -v
+```
+
 ---
 
 ## 🧠 How It Works
@@ -137,6 +152,8 @@ Load the saved model and pass any raw email string to get a `Phishing` or `Legit
 ```
 pandas
 scikit-learn
+numpy
+pytest
 ```
 
 Install with:
@@ -149,7 +166,7 @@ pip install -r requirements.txt
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
